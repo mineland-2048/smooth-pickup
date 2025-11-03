@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "dev.mineland.smoothpickup.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "AbstractContainerMixin",
+    "GuiGraphicsMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

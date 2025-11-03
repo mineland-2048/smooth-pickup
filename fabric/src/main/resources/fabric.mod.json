@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "smoothpickup",
+  "version": "${version}",
+  "name": "SmoothPickup",
+  "description": "Another inventory tweaks mod",
+  "authors": [
+    "mineland"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/smoothpickup/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.mineland.smoothpickup.fabric.SmoothPickupFabric"
+    ],
+    "client": [
+      "dev.mineland.smoothpickup.fabric.client.SmoothpickupFabricClient"
+    ]
+  },
+  "mixins": [
+    "smoothpickup.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.9",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

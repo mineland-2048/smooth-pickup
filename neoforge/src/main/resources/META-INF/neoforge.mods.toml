@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "GNU LGPL 3.0"
+
+[[mods]]
+modId = "smoothpickup"
+version = "${version}"
+displayName = "SmoothPickup"
+authors = "mineland"
+description = '''
+Another inventory tweaks mod
+'''
+#logoFile = ""
+
+[[dependencies.smoothpickup]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.smoothpickup]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.9,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "smoothpickup.mixins.json"
