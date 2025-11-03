@@ -25,4 +25,6 @@ public class GuiGraphicsMixin {
     public void renderTooltipTail(Font font, List<ClientTooltipComponent> list, int i, int j, ClientTooltipPositioner clientTooltipPositioner, @Nullable ResourceLocation resourceLocation, CallbackInfo ci) {
         InventoryHotswapMethods.renderGuiTooltipTail((GuiGraphics) (Object) this, font, list, i, j, clientTooltipPositioner, resourceLocation, ci);
     }
+
+
 }

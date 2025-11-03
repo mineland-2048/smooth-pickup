@@ -18,15 +18,19 @@ modId = "neoforge"
 type = "required"
 versionRange = "[21,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[dependencies.smoothpickup]]
 modId = "minecraft"
 type = "required"
 versionRange = "[1.21.9,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 
 [[mixins]]
 config = "smoothpickup.mixins.json"
+
+[[mixins]]
+config = "smoothpickup.neo.mixins.json"
+

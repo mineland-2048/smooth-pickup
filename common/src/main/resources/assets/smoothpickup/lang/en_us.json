@@ -1,0 +1,5 @@
+{
+  "smoothPickup.settings.title": "Smooth Pickup settings",
+  "smoothPickup.settings.isFreeGridEnabled": "Enable off grid",
+  "smoothPickup.settings.isFreeGridEnabled.tooltip": "Makes items and tooltips free from the pixel grid on big gui scales. You can see the effects by moving the mouse over this button's tooltip"
+}

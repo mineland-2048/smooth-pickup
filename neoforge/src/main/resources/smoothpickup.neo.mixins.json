@@ -1,0 +1,9 @@
+{
+  "package": "dev.mineland.smoothpickup.neoforge.mixin",
+  "required": true,
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "GuiGraphicsNeoMixin"
+  ]
+}
