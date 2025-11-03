@@ -34,7 +34,7 @@ public class SmoothPickupConfigScreen extends Screen {
 
 
     public SmoothPickupConfigScreen(Screen parent) {
-        super(Component.literal("Smooth Pickup Config"));
+        super(Component.translatable("smoothPickup.settings.title"));
         this.parent = parent;
         this.font = Minecraft.getInstance().font;
         this.backupConfig = SmoothPickup.getActiveConfig().copy();
@@ -119,7 +119,7 @@ public class SmoothPickupConfigScreen extends Screen {
     }
 
     public void flushSettings() {
-        SmoothPickup.logger.info("Flushing settings!");
+        SmoothPickup.logger.debug("Flushing settings!");
         config.flushConfig();
     }
 

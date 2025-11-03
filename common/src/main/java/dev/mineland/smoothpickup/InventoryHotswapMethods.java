@@ -41,14 +41,13 @@ public class InventoryHotswapMethods {
 
     public static void renderGuiTooltipHead(GuiGraphics guiGraphics, Font font, List<ClientTooltipComponent> list, int i, int j, ClientTooltipPositioner clientTooltipPositioner, @Nullable ResourceLocation resourceLocation, CallbackInfo ci) {
         if (!getActiveConfig().isFreeGridEnabled()) return;
-//        guiGraphics.drawString(font, clientTooltipPositioner.getClass().toString(), 0, 0, 0xFFFFFFFF);
         float newPosX = getRenderX() - i;
         float newPosY = getRenderY() - j;
         if (clientTooltipPositioner.getClass() == MenuTooltipPositioner.class) {
             int minX = 0;
             int minY = list.size() == 1 ? -2 : 0;
 
-            // get the sizes. Directly from the guiGraphics.
+            // get the sizes. Taken from the guiGraphics.
             for (ClientTooltipComponent clientTooltipComponent : list) {
                 int m = clientTooltipComponent.getWidth(font);
                 if (m > minX) {

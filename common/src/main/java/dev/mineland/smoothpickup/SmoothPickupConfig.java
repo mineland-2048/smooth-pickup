@@ -15,7 +15,6 @@ public class SmoothPickupConfig {
 
 
     public static SmoothPickupConfig DEFAULT = new SmoothPickupConfig();
-//    private SmoothPickupConfig backup;
 
 
     public SmoothPickupConfig() {
