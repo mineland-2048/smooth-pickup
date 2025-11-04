@@ -3,33 +3,31 @@
   "id": "smoothpickup",
   "version": "${version}",
   "name": "SmoothPickup",
-  "description": "Another inventory tweaks mod",
+  "description": "Smoothly picks up items on the inventory",
   "authors": [
     "mineland"
   ],
-  "contact": {
-    "homepage": ""
-  },
   "license": "LGPL-3.0",
   "icon": "assets/smoothpickup/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       "dev.mineland.smoothpickup.fabric.SmoothPickupFabric"
     ],
     "client": [
       "dev.mineland.smoothpickup.fabric.client.SmoothpickupFabricClient"
+    ],
+    "modmenu": [
+      "dev.mineland.smoothpickup.fabric.client.SmoothPickupModMenuApiImpl"
     ]
+
   },
   "mixins": [
     "smoothpickup.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.17.3",
-    "minecraft": "~1.21.9",
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "${version_range_fabric}",
     "java": ">=21"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }

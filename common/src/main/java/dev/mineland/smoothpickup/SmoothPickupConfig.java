@@ -39,7 +39,9 @@ public class SmoothPickupConfig {
 
         try {
             if (!file.exists()) {
+                SmoothPickup.logger.debug("creating config file at " + file.getPath());
                 file.createNewFile();
+                file.mkdirs();
                 writeConfig(filePath);
                 SmoothPickup.logger.debug("Created new config file");
                 return;

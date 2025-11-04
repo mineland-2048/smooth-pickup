@@ -6,12 +6,12 @@ license = "GNU LGPL 3.0"
 [[mods]]
 modId = "smoothpickup"
 version = "${version}"
-displayName = "SmoothPickup"
+displayName = "Smooth Pickup"
 authors = "mineland"
 description = '''
-Another inventory tweaks mod
+Smoothly picks up items on the inventory
 '''
-#logoFile = ""
+logoFile = "assets/smoothpickup/icon.png"
 
 [[dependencies.smoothpickup]]
 modId = "neoforge"
