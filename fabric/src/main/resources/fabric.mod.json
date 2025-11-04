@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "smoothpickup",
-  "version": "${version}",
-  "name": "SmoothPickup",
+  "version": "${version}-mc${minecraft_version}-fabric",
+  "name": "Smooth Pickup",
   "description": "Smoothly picks up items on the inventory",
   "authors": [
     "mineland"

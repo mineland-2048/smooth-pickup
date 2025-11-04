@@ -5,7 +5,7 @@ license = "GNU LGPL 3.0"
 
 [[mods]]
 modId = "smoothpickup"
-version = "${version}"
+version = "${version}-mc${minecraft_version}-neoforge"
 displayName = "Smooth Pickup"
 authors = "mineland"
 description = '''
@@ -23,7 +23,7 @@ side = "CLIENT"
 [[dependencies.smoothpickup]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.9,)"
+versionRange = "${version_range_neo}"
 ordering = "NONE"
 side = "CLIENT"
 
