@@ -68,11 +68,6 @@ public class SmoothPickupConfigScreen extends Screen {
         this.layout.addTitleHeader(Component.translatable("smoothPickup.settings.title"), getFont());
 
         LinearLayout footerLayout = LinearLayout.horizontal().spacing(Button.DEFAULT_SPACING);
-        footerLayout.addChild(
-                Button.builder(Component.translatable("gui.done"), button -> {
-                    onClose();
-                }).build()
-        );
 
         footerLayout.addChild(
                 Button.builder(Component.translatable("gui.cancel"), button -> {
@@ -80,6 +75,13 @@ public class SmoothPickupConfigScreen extends Screen {
                 })
                         .build()
         );
+
+        footerLayout.addChild(
+                Button.builder(Component.translatable("gui.done"), button -> {
+                    onClose();
+                }).build()
+        );
+
 
         this.layout.addToFooter(footerLayout);
 
