@@ -11,9 +11,6 @@
   "icon": "assets/smoothpickup/icon.png",
   "environment": "client",
   "entrypoints": {
-    "main": [
-      "dev.mineland.smoothpickup.fabric.SmoothPickupFabric"
-    ],
     "client": [
       "dev.mineland.smoothpickup.fabric.client.SmoothpickupFabricClient"
     ],

@@ -21,7 +21,7 @@ public class InventoryHotswapMethods {
         if (!getActiveConfig().isFreeGridEnabled()) return;
 
         guiGraphics.pose().pushMatrix();
-        guiGraphics.pose().translate((getRenderX()-i), (getRenderY()-j));
+        guiGraphics.pose().translate((GuiUtils.getRenderX()-i), (GuiUtils.getRenderY()-j));
         carriedItemIsRendering = true;
     }
 
@@ -41,8 +41,8 @@ public class InventoryHotswapMethods {
 
     public static void renderGuiTooltipHead(GuiGraphics guiGraphics, Font font, List<ClientTooltipComponent> list, int i, int j, ClientTooltipPositioner clientTooltipPositioner, @Nullable ResourceLocation resourceLocation, CallbackInfo ci) {
         if (!getActiveConfig().isFreeGridEnabled()) return;
-        float newPosX = getRenderX() - i;
-        float newPosY = getRenderY() - j;
+        float newPosX = GuiUtils.getRenderX() - i;
+        float newPosY = GuiUtils.getRenderY() - j;
         if (clientTooltipPositioner.getClass() == MenuTooltipPositioner.class) {
             int minX = 0;
             int minY = list.size() == 1 ? -2 : 0;
